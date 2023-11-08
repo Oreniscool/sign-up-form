@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="image">
+        <img src="./green-leaf.avif" alt="sign up image" width="587">
+    </div>
+    <div class="details">
+        <div class="heading">
+            <h1 class="CTA">
+                This is not a real online service! You know you need a service like this to realize your deepest dreams.
+            </h1>
+            <h1>
+                Sign up <i>now</i> for our fake service!
+            </h1>
+        </div>
+        <div class="sign-up">
+            <h2>Lets do this!</h2>
+            <form id="sign-up-form" action="#" method="get">
+                <div class="row p-3">
+                    <div class="col">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="col">
+                        <label for="last-name">Last name</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="col">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col">
+                        <label for="password" required>Password</label>
+                        <input type="password" name="password" id="password" required>
+                        <div class="message">Enter a valid password</div>
+                    </div>
+                    <div class="col">
+                        <label for="con-password">Confirm password</label>
+                        <input type="password" name="con-password" id="con-password" required onkeyup="validatePassword()">
+                    </div>
+                </div>
+            </form>
+        </div>
+            <button  class="submit" type="submit" form="sign-up-form">Sign up</button>
+            <div class="footer">
+                <p>Already have an account? <a href="#">Sign in</a></p>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
